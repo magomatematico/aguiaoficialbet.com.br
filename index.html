@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Águia Oficial é o melhor site de apostas online do Brasil, oferecendo as melhores cotações do mercado, recargas e saques via PIX automáticos, resultados diários e suporte 24/7.">
-    <meta name="keywords" content="Águia Oficial, apostas online, apostas esportivas, cotações de apostas, PIX, cassino online, apostas no Brasil, resultados de apostas">
+    <meta name="description" content="Águia Oficial é o principal site de apostas online do Brasil, com cotações imbatíveis, recargas e saques instantâneos via PIX, resultados ao vivo e suporte 24/7 em português.">
+    <meta name="keywords" content="Águia Oficial, apostas online Brasil, apostas esportivas, cotações ao vivo, PIX instantâneo, cassino online Brasil, resultados ao vivo, apostas seguras">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="Águia Oficial">
-    <!-- Open Graph for social media sharing -->
-    <meta property="og:title" content="Águia Oficial - O Melhor Site de Apostas Online do Brasil">
-    <meta property="og:description" content="Descubra a Águia Oficial, o principal site de apostas online do Brasil com cotações imbatíveis, transações rápidas via PIX e resultados diários.">
+    <meta name="author" content="Águia Oficial Team">
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="Águia Oficial - Apostas Online com PIX Instantâneo">
+    <meta property="og:description" content="Aposte com a Águia Oficial, o melhor site de apostas do Brasil, com cotações imbatíveis, transações via PIX e resultados ao vivo.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://app.aguiaoficial.com/pr/sAeBgEfV">
-    <meta property="og:image" content="https://app.aguiaoficial.com/favicon.png">
-    <!-- Twitter Card for Twitter sharing -->
+    <meta property="og:image" content="https://app.aguiaoficial.com/assets/aguia-logo.png">
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Águia Oficial - O Melhor Site de Apostas Online do Brasil">
-    <meta name="twitter:description" content="Aposte com as melhores cotações na Águia Oficial, com saques e recargas via PIX e resultados diários.">
-    <meta name="twitter:image" content="https://app.aguiaoficial.com/favicon.png">
-    <title>Águia Oficial - O Melhor Site de Apostas Online do Brasil</title>
-    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="twitter:title" content="Águia Oficial - Apostas Online com PIX Instantâneo">
+    <meta name="twitter:description" content="Aposte com cotações imbatíveis e transações rápidas via PIX na Águia Oficial, o líder em apostas online no Brasil.">
+    <meta name="twitter:image" content="https://app.aguiaoficial.com/assets/aguia-logo.png">
+    <title>Águia Oficial - Apostas Online com PIX Instantâneo</title>
+    <link rel="icon" type="image/png" href="aguia-favicon.png">
     <link rel="canonical" href="https://app.aguiaoficial.com/pr/sAeBgEfV">
     <!-- Schema.org structured data -->
     <script type="application/ld+json">
@@ -28,13 +28,13 @@
         "@type": "WebSite",
         "name": "Águia Oficial",
         "url": "https://app.aguiaoficial.com/pr/sAeBgEfV",
-        "description": "O melhor site de apostas online do Brasil, com cotações competitivas, transações via PIX e resultados diários.",
+        "description": "Líder em apostas online no Brasil, com cotações competitivas, transações instantâneas via PIX e resultados ao vivo.",
         "publisher": {
             "@type": "Organization",
             "name": "Águia Oficial",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://app.aguiaoficial.com/favicon.png"
+                "url": "https://app.aguiaoficial.com/assets/aguia-logo.png"
             }
         },
         "potentialAction": {
@@ -51,12 +51,14 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
+            background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
         }
         iframe {
             width: 100vw;
-            height: 100vh;
+            height: calc(100vh - 60px);
             border: none;
             display: block;
+            margin-top: 60px;
         }
         .whatsapp-btn {
             position: fixed;
@@ -69,18 +71,73 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
             z-index: 1000;
-            transition: transform 0.3s ease;
+            animation: pulse 2s infinite;
         }
         .whatsapp-btn:hover {
             transform: scale(1.1);
+            animation: none;
         }
         .whatsapp-btn img {
             width: 32px;
             height: 32px;
         }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .promo-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: linear-gradient(90deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            z-index: 1000;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        .promo-banner p {
+            margin: 0;
+            flex: 1;
+        }
+        .promo-banner a {
+            background: #ffffff;
+            color: #1e3a8a;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .promo-banner a:hover {
+            background: #e5e7eb;
+        }
+        .promo-banner .close-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
         @media (max-width: 640px) {
+            .promo-banner {
+                font-size: 14px;
+                height: 50px;
+                padding: 0 15px;
+            }
+            .promo-banner a {
+                padding: 6px 12px;
+                font-size: 14px;
+            }
             .whatsapp-btn {
                 width: 50px;
                 height: 50px;
@@ -91,10 +148,19 @@
                 width: 28px;
                 height: 28px;
             }
+            iframe {
+                height: calc(100vh - 50px);
+                margin-top: 50px;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="promo-banner" aria-label="Banner promocional da Águia Oficial">
+        <p>Aposte com a Águia Oficial: cotações ao vivo e PIX instantâneo!</p>
+        <a href="https://app.aguiaoficial.com/pr/sAeBgEfV" target="_blank" aria-label="Junte-se agora à Águia Oficial">Junte-se Agora</a>
+        <button class="close-btn" aria-label="Fechar banner" onclick="this.parentElement.style.display='none'; document.querySelector('iframe').style.height='100vh'; document.querySelector('iframe').style.marginTop='0';">✕</button>
+    </div>
     <iframe 
         src="https://app.aguiaoficial.com/pr/sAeBgEfV" 
         title="Águia Oficial Content" 
@@ -134,9 +200,3 @@
     </script>
 </body>
 </html>
-<head>
-  <meta charset="UTF-8">
-  <title>Águia Oficial é o melhor site de apostas online do Brasil</title>
-  <link rel="canonical" href="https://www.aguiaoficialbet.com/" />
-  <!-- Outras meta tags -->
-</head>
